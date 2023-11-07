@@ -12,8 +12,7 @@ web3_provider = Web3(Web3.HTTPProvider(RPC_address))
 
 # Asynchronous JSON-RPC API request
 def custom_web3_request(method, params):
-    response = web3_provider.provider.make_request(method, params)
-    return response
+    return web3_provider.provider.make_request(method, params)
 
 if __name__ == "__main__":
     # Check if the block has been finalized

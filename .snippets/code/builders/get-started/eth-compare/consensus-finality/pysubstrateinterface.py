@@ -33,8 +33,8 @@ if __name__ == "__main__":
 
         print(f"Current finalized block number is { str(finalized_block_number) }")
         print(
-            f"Your transaction in block { str(tx_block_number) } is finalized? { str(finalized_block_number >= tx_block_number) }"
+            f"Your transaction in block {tx_block_number} is finalized? {finalized_block_number >= tx_block_number}"
         )
         print(
-            f'Your transaction is indeed in block { str(tx_block_number) }? { str(tx_hash in tx_block["result"]["transactions"]) }'
+            f'Your transaction is indeed in block {tx_block_number}? {tx_hash in tx_block["result"]["transactions"]}'
         )
